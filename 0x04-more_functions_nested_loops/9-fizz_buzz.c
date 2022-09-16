@@ -13,7 +13,7 @@ int main(void)
 {
 	int b = 1;
 
-	while (b++ < 100)
+	while (b++ <= 100)
 	{
 		if ((b % 3 == 0) && (b % 5 == 0))
 		{
