@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 *main - program that prints either number
@@ -10,21 +11,21 @@
 
 int main(void)
 {
-	int num = 1;
+	int b = 1;
 
-	while (num++ < 100)
+	while (b++ < 100)
 	{
-		if ((num % 3 == 0) && (num % 5 == 0))
+		if ((b % 3 == 0) && (b % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((num % 3) == 0)
+		else if ((b % 3) == 0)
 		{
 			printf("Fizz ");
 		}
-		else if ((num % 5) == 0)
+		else if ((b % 5) == 0)
 		{
-			if (num != 100)
+			if (b != 100)
 			{
 				printf("Buzz ");
 			}
@@ -35,7 +36,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", num);
+			printf("%d ", b);
 		}
 	}
 	printf("\n");
