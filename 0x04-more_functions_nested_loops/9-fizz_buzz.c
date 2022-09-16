@@ -11,21 +11,21 @@
 
 int main(void)
 {
-	int b = 1;
+	int num = 1;
 
-	while (b++ <= 100)
+	while (num++ < 100)
 	{
-		if ((b % 3 == 0) && (b % 5 == 0))
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((b % 3) == 0)
+		else if ((num % 3) == 0)
 		{
 			printf("Fizz ");
 		}
-		else if ((b % 5) == 0)
+		else if ((num % 5) == 0)
 		{
-			if (b != 100)
+			if (num != 100)
 			{
 				printf("Buzz ");
 			}
@@ -36,7 +36,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", b);
+			printf("%d ", num);
 		}
 	}
 	printf("\n");
