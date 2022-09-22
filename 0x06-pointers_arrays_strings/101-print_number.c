@@ -1,25 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
- *
- * Return: Always 0.
+ * print_number - Function prototype
+ * Description: Prints a number
+ * @n: The number to be printed
+ * Return: void
  */
-int main(void)
+void print_number(int n)
 {
-	int num;
+	unsigned int i = n;
 
-	for (num = 0; num <= 9; num++)
+	if (n < 0)
 	{
-		putchar((num % 10) + '0');
-		if (num == 9)
-			continue;
-		
-		putchar(',');
-		putchar(' ');
+		_putchar('-');
+		i = -i;
 	}
 
-	putchar('\n');
 
-	return (0);
+	if ((i / 10) > 0)
+		print_number(i / 10);
+
+	_putchar((i % 10) + '0');
 }
