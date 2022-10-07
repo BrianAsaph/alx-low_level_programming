@@ -1,2 +1,7 @@
-Create the static library libmy.a containing all the functions listed below:
-Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
+a function that allocates memory using malloc.
+a function that concatenates two strings.
+ a function that allocates memory for an array, using malloc.
+a function that creates an array of integers.
+a function that reallocates a memory block using malloc and free
+ a program that multiplies two positive numbers.
+
